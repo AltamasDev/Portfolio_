@@ -19,7 +19,6 @@ html{
     right: 50px;
     color: #fff;
     cursor: pointer;
-    display: none;
     z-index: 10000000;
 }
 
