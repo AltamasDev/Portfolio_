@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/magic.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://kit.fontawesome.com/277a24ece0.js" crossorigin="anonymous"></script>
+</head>
+<body id="body" onmousemove="to_move()">
+    <a href="#header"><i class="fa-solid fa-arrow-up" id="top-icon" ></i></a>
+    <!-- -------Header Coding------ -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo.png" class="logo">
+                <ul id="menu-ul">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openbtn()"></i>
+            </nav>
+            <div class="header_text">
+                <h1>UI/UX Designer</h1>
+                <p>Hi,I'm <span>Kevin</span> <br> Jen From Australia</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------About Coding----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row about_row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello I am Kevin Jen From Australia . I am the Owner Of The GreatStack Channel So You Can Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptate inventore odit velit at enim sit, iusto et incidunt quisquam ipsam laborum nulla minus culpa consectetur molestiae delectus, eum voluptates! Ducimus laborum perspiciatis, eos illo dolorem fugiat natus atque adipisci. </p>
+                
+                    <div id="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li class="tab-"><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li class="tab-"><span>Web Development</span><br>Web App Development</li>
+                            <li class="tab-"><span>App Development</span><br>Building Android/ios Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li class="tab-"><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li class="tab-"><span>2019 - 2021</span><br>Team Lead at StarApp LLC.</li>
+                            <li class="tab-"><span>2016 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li class="tab-"><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="tab-"><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li class="tab-"><span>2016</span><br>MBA From MIT Bangalore.</li>
+                            <li class="tab-"><span>2017</span><br>BBA From ISM Bangalore.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------Services------- -->
+        <div id="services">
+            <div class="container">
+                 <h1 class="sub-title">My Services</h1>
+
+                 <div class="services-list">
+                    
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugit nam rerum obcaecati atque nulla ipsam .</p>
+                            <a href="#">Learn More</a>
+                        </div>
+
+                        <div>
+                            <i class="fa-brands fa-uikit"></i>
+                            <h2>UI/UX Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugit nam rerum obcaecati atque nulla ipsam .</p>
+                            <a href="#">Learn More</a>
+                        </div>
+
+                        <div>
+                            <i class="fa-brands fa-app-store"></i>
+                            <h2>Apps Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugit nam rerum obcaecati atque nulla ipsam .</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    
+                 </div>
+            </div>
+        </div>
+    <!-- ---------Portfolio--------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work's</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h1>Social Media App</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis doloribus qui amet</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h1>Music App</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis doloribus qui amet</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h1>Online Shopping App</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis doloribus qui amet</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+    <!-- ---------Contact Us--------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row cotact_row">
+                    <div class="left-content">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane animate__animated" id="send"></i> contact@example.com</p>
+                        <p><i class="fa-solid fa-square-phone animate__animated" id="phone"></i> 0123456789</p>
+                        <div class="social-footer">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <a href="images/my-cv.pdf" download="" class="cv-btn">Download CV</a>
+                    </div>
+                    <div class="right-content">
+                        <form>
+                            <input type="text" name="Name" required placeholder="Your Name" id="name-input">
+                            <input type="email" name="Email" required placeholder="Your Email" id="email-input">
+                            <textarea name="Message" rows="6" required placeholder="Message" id="textarea" ></textarea>
+                            <button type="submit" id="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>Copyright © Kevin. Made With <i class="fa-solid fa-heart"></i> by Easy Turorial's.</p>
+            </div>
+        </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+    </script>
+
+    <script>
+        var send = document.getElementById("send");
+        var phone = document.getElementById("phone");
+        
+            send.onmouseover = 
+                function(){
+                    this.className= "fa-solid fa-paper-plane animate__animated animate__wobble";
+                }
+
+            send.onmouseout = 
+                function(){
+                    this.className= "fa-solid fa-paper-plane animate__animated";
+                }
+
+            phone.onmouseover = 
+                function(){
+                    this.className= "fa-solid fa-square-phone animate__animated animate__wobble";
+                }
+
+            phone.onmouseout = 
+                function(){
+                    this.className= "fa-solid fa-square-phone animate__animated";
+                }
+    </script>
+
+    <script>
+        function openbtn(){
+            var menu_ul = document.getElementById("menu-ul");
+                menu_ul.style.right= "0px"; 
+        }
+
+        function closebtn(){
+            var menu_ul = document.getElementById("menu-ul");
+                menu_ul.style.right= "-200px";
+        }
+
+        function to_move(){
+            var top_icon = document.getElementById("top-icon");
+                top_icon.style.display= "block";
+        }
+    </script>
+
+</body>
+</html>

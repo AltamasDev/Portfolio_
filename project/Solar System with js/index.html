@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <figure class="btn" id="btn_first">
+        <div id="earth_btn1" onclick="left_1()"></div>
+        <div id="earth_btn2" onclick="left_2()"></div>
+    </figure>
+    <figure class="btn" id="btn_second">
+        <div id="moon_btn1" onclick="right_1()"></div>
+        <div id="moon_btn2" onclick="right_2()"></div>
+    </figure>
+
+
+<div id="main_container">
+    <div class="container" id="container">
+        
+
+        <figure class="earth_container" id="earth_container">
+            <main class="earth"> </main>
+            <main class="moon"></main>
+        </figure>
+    </div>
+    
+    <main class="sun"></main>
+
+</div>
+
+
+
+
+
+
+    <script>
+        function left_1(){
+                var a = document.getElementById("earth_btn1");
+                a.style.display="none";
+                
+
+                var b = document.getElementById("earth_btn2");
+                b.style.display="block";
+                b.style.backgroundColor= "white";
+
+                var c = document.getElementById("container");
+                c.style.animation="anti_container 35s linear infinite";
+                c.style.borderLeft= "1px solid black";
+                c.style.borderTop= "1px solid white";
+
+                var btn = document.getElementById("btn_first");
+                btn.style.backgroundColor= "aqua";
+
+        }
+
+
+        function left_2(){
+                var a = document.getElementById("earth_btn1");
+                a.style.display="block";
+                a.style.animation="earth_first 1s 1";
+
+                var b = document.getElementById("earth_btn2");
+                b.style.display="none";
+
+                var c = document.getElementById("container");
+                c.style.animation="container 35s linear infinite";
+                c.style.borderLeft= "1px solid white";
+                c.style.borderTop= "1px solid black";
+
+                var btn = document.getElementById("btn_first");
+                btn.style.backgroundColor= "white";
+        }
+
+
+
+        function right_1(){
+                var a = document.getElementById("moon_btn1");
+                a.style.display="none";
+
+                var b = document.getElementById("moon_btn2");
+                b.style.display="block";
+                b.style.backgroundColor= "white";
+
+                var c = document.getElementById("earth_container");
+                c.style.animation="anti_earth 10s linear infinite";
+                c.style.borderLeft= "1px solid black";
+                c.style.borderTop= "1px solid white";
+
+                var btn = document.getElementById("btn_second");
+                btn.style.backgroundColor= "#ccc";
+        }
+
+
+        function right_2(){
+                var a = document.getElementById("moon_btn1");
+                a.style.display="block";
+                a.style.animation="moon_first 1s 1";
+
+                var b = document.getElementById("moon_btn2");
+                b.style.display="none";
+
+                var c = document.getElementById("earth_container");
+                c.style.animation="earth 15s linear infinite";
+                c.style.borderLeft= "1px solid white";
+                c.style.borderTop= "1px solid black";
+
+                var btn = document.getElementById("btn_second");
+                btn.style.backgroundColor= "white";
+        }   
+    </script>
+</body>
+</html>
