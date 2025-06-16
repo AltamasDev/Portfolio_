@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile_css/profile.css">
+    <link rel="stylesheet" href="profile_css/all.min.css">
+    <link rel="stylesheet" href="profile_css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Profile Page Coding Started Here Which was Show Only First Time-->
+    <!--Profile Page Coding Started Here Which was Show Only First Time-->
+    <div id="profile_container">
+        <div id="page">
+            <div id="profile_box">
+                <i class="fa-solid fa-user" id="profile_icon"></i>    
+                <input type="file" accept="image/*" id="profile_upload_input">
+            </div>
+
+            <p id="profile_text">Upload Profile Pic</p>
+
+            <h1 id="profile_user_name"></h1>
+
+            <button id="profile_next_btn">Next  &nbsp;<i class="fa-solid fa-angles-right"></i></button>
+
+            <button id="profile_logout_btn">Log Out  &nbsp;&nbsp;<i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+    </div>
+    <!--Profile Page Coding Ended Here-->
+
+    <!--Main Profile Container Coding Started Here Which was Permanantly for User -->
+    <!--Main Profile Container Coding Started Here Which was Permanantly for User -->
+    <div id="main_profile_container">
+        <div id="main_profile_header">  <!--Main Profile Header -->
+            <div id="main_profile_circle">
+                <input type="file" accept="image/*" id="main_profile_upload_input">
+            </div>    <!--Main Profile Circle -->
+        </div>
+
+        <h1 align="center" id="main_profile_username">Altamash Mansuri</h1> <!--Main Profile User Name -->
+
+        <div id="main_profile_apps">    <!--Main Profile Apps Box -->
+        <a href="apps/contact/contact.html">
+            <div id="contact">      <!--Main Profile Contact Box -->
+                <i class="fa-solid fa-address-book"></i>    
+                <p>Contact</p>
+            </div>
+        </a>
+		<a href="apps/player/player.html">
+            <div id="player">       <!--Main Profile Player Box -->
+                <i class="fa-solid fa-circle-play"></i>
+                <p>Player</p>
+            </div>
+		</a>
+            <div id="logout">       <!--Main Profile Logout Box -->
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p id="main_profile_logout_text">Logout</p>
+            </div>
+        </div>
+
+        <div id="main_profile_footer">      <!--Main Profile Footer -->
+            <p>Developed By : S_G_999</p>
+        </div>
+    </div>
+    <!--Main Profile Container Coding Ended Here -->
+
+
+    <script src="profile_js/profile.js"></script>
+</body>
+</html>
+
+
+
