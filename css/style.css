@@ -216,6 +216,7 @@ html{
 
 .skill-img-box{
     width: 35%;
+    height: fit-content;
     display: flex;
     justify-content: flex-end;
 }
