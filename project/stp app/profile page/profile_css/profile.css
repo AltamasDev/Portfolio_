@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+
+/*Profile Container Coding Started Here Which was Show Only 1st Time*/
+/*Profile Container Coding Started Here Which was Show Only 1st Time*/
+#profile_container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(254, 194, 204, 0.529);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: white;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#profile_box{
+    width: 150px;
+    height: 150px;
+    border: 10px solid white;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    position: relative;
+}
+
+#profile_icon{
+    font-size: 120px;
+    color: rgba(132, 132, 138,0.5);
+    margin-top: 30px;
+}
+
+#profile_upload_input{
+    width: 140px;
+    height: 140px;
+    border: 1px solid red;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#profile_text{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    color: rgba(132, 132, 138);
+}
+
+#profile_user_name{
+    margin-top: 20px;
+    color: rgb(111, 8, 166);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+#profile_next_btn,#profile_logout_btn{
+    width: 100%;
+    background-color: rgba(239, 42, 239, 0.937);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    margin-top: 25px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#profile_next_btn{
+    background-color: #ccc;
+}
+
+
+
+
+#profile_logout_btn:hover{   
+    background-color: rgb(185, 4, 185);
+}
+
+/*Main Profile Container Coding Started Here Which was Permanantly for User*/
+/*Main Profile Container Coding Started Here Which was Permanantly for User*/
+
+
+
+#main_profile_container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(254, 194, 204, 0.529);
+    display: none;
+    position: relative;
+}
+
+#main_profile_header{
+    width: 100%;
+    height: 130px;
+    background-image: url("../profile imgs/pexels-pixabay-462162.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#main_profile_circle{
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    border: 10px solid white;
+    border-radius: 50%;
+    margin-top:55px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+
+#main_profile_username{
+    margin-top: 85px;
+    font-family: ubuntu;
+}
+
+#main_profile_apps{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact,#player,#logout{
+    width: 180px;
+    height: 150px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact:hover,#player:hover,#logout:hover{
+    width: 200px;
+    height: 170px;
+    box-shadow: 0 0 20px #ccc;
+    cursor: pointer;
+}
+
+#contact i,#player i,#logout i{
+    font-size: 2rem;
+    color: purple;
+}
+
+#contact p,#player p,#logout p{
+    font-size: 1.3rem;
+    font-family: ubuntu;
+    margin-top: 10px;
+    color: purple;
+}
+
+
+#main_profile_footer{
+    width: 100%;
+    height: 45px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+#main_profile_footer p{
+    color: white;
+    font-family: ubuntu;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#main_profile_upload_input{
+    width: 140px;
+    height: 140px;
+    border: 1px solid red;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    top:0%;
+    left: 0%;
+    opacity: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/*Main Profile Container Coding Ended Here*/
+
+
+
+/* Main Profile Page In 650px */
+@media (max-width:650px){
+    #contact,#player,#logout{
+        width: 140px;
+        height: 120px;
+    }
+}
+
+
+/* Main Profile Page In 570px */
+@media (max-width:570px){
+    #contact,#player,#logout{
+        width: 130px;
+        height: 110px;
+    }
+
+    #contact:hover,#player:hover,#logout:hover{
+        width: 160px;
+        height: 140px;
+    }
+}
+
+
+/* Main Profile Page In 490px */
+@media (max-width:570px){
+    #main_profile_container{
+        height: auto;
+        background-color: rgba(254, 194, 204, 0.529);
+    }
+
+    #main_profile_apps{
+        height: auto;
+        flex-direction: column;
+    }
+
+    #contact,#player,#logout{
+        width: 130px;
+        height: 110px;
+    }
+
+    #contact:hover,#player:hover,#logout:hover{
+        width: 160px;
+        height: 140px;
+    }
+
+    #main_profile_footer{
+        position: relative;
+    }
+}
