@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div id="page">
+
+            <!--Login Box Coding Started Here-->
+            <div id="login" class="animate__animated animate__flipInY">
+                <h1 align="center">Login</h1>
+
+                <form id="login_frm" autocomplete="off">
+                    <input type="email" name="email" placeholder="Enter Email" id="login_email">
+                    <small id="login_email_notice">Email Id Not Registered</small>
+                    <input type="password" name="password" placeholder="Enter Password" id="login_password">
+                    <small id="login_pass_notice">Wrong Password</small>
+                    <button type="submit" id="login_btn">Login</button>
+                </form>
+
+                <p align="center">Don't have an account ? <span onclick="signup_page_btn()"> Sign Up</span></p>
+            </div>
+            <!--Login Box Coding Ended Here-->
+
+            <!--Sign-Up Box Coding Started Here-->
+            <div id="signup" class=  "animate__animated animate__flipInY">
+
+                <h1 align="center">Sign Up</h1>
+
+                <form id="signup_frm" autocomplete="off">
+                    <input type="text" name="name" placeholder="Enter Name" id="user_name">
+                    <input type="email" name="email" placeholder="Enter Email" id="signup_email" oninput="signup_email_match()">
+                    <small id="email_notice">Email Already Exist</small>
+                    <input type="number" name="mobile no" placeholder="Enter Number" id="signup_phone_no">
+                    <input type="password" name="password" placeholder="Enter Password" id="signup_password">
+                    
+                    <button type="submit" id="signup_btn">Sign Up</button>
+                </form>
+                    
+
+                <p align="center">Already have an account ? <span onclick="login_page_btn()">Login</span></p>
+            </div>
+            <!--Sign-Up Box Coding Ended Here-->
+        </div>
+    </div>
+
+
+
+
+    <!--Java Script Coding Started Here-->
+    <script src="js/design.js"></script>
+    <script src="js/login_signup.js"></script>
+</body>
+</html>
