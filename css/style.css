@@ -51,7 +51,7 @@ html{
 .navbar ul{
     list-style-type: none;
     display: flex;
-    transition:  0.5s;
+    transition: all 0.5s linear;
 }
 
 .navbar ul li{
